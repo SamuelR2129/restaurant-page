@@ -5,7 +5,6 @@ module.exports = {
   mode: "development",
   entry: {
     index: "./src/index.js",
-    createPage: "./src/create-page.js",
   },
 
   devtool: "inline-source-map",
@@ -18,6 +17,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      template: "./src/index.html",
       title: "restaurant-page",
     }),
   ],

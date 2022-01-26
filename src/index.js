@@ -1,4 +1,4 @@
 import "./style.css";
-import printMe from "./create-page";
+import printMe from "./components/create-page";
 
 printMe();
