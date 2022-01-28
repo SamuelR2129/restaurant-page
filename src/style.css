@@ -3,6 +3,7 @@ body #content {
   width: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .background-cover {
@@ -13,14 +14,14 @@ body #content {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-image: url("./components/images/green-leather-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("./components/images/green-leather-background.jpg");
   background-size: cover;
   align-items: center;
 }
 
 #front-page-hand {
   position: relative;
-  filter: invert(1);
   width: 500px;
   margin-right: 86px;
   margin-top: 57px;
@@ -39,7 +40,12 @@ body #content {
 }
 
 .main-font-color {
-  color: #fff;
+  color: #c3a343;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+    url(./components/images/gold-texture.jpg) repeat;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
 }
 
 #bar-title {
@@ -53,4 +59,58 @@ body #content {
   font-family: "Kiona";
   font-size: 2.5em;
   letter-spacing: 88px;
+}
+
+#nav-container {
+  width: 60%;
+  margin-top: 80px;
+}
+
+#nav-bar-wrapper {
+  font-size: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-bar-options {
+  text-decoration: none;
+  font-family: "Kiona";
+  letter-spacing: 10px;
+}
+
+/*link hover effect*/
+a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+
+  /* Adjust height and bottom values to work with selected font */
+  height: 0.1em;
+  bottom: 0.1em;
+
+  /* Create gradient */
+  background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(218, 199, 140, 0.6) 30%,
+    rgba(218, 199, 140, 0.7) 50%,
+    rgba(218, 199, 140, 0.6) 70%,
+    transparent 100%
+  );
+
+  /* Set-up fade-in animation */
+  opacity: 0;
+  animation: fadeIn 400ms ease-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
 }

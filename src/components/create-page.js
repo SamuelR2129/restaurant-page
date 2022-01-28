@@ -22,4 +22,36 @@ export default function printMe() {
   handImage.id = "front-page-hand";
   handImage.src = hand;
   greenLeatherCover.appendChild(handImage);
+
+  //nav bar at bottom of main
+  const navItems = [
+    { href: "#", text: "MENU" },
+    { href: "#", text: "CONTACT" },
+    { href: "#", text: "ABOUT" },
+  ];
+
+  const navElem = document.createElement("nav");
+  const navList = document.createElement("ul");
+
+  navElem.id = "nav-container";
+  navList.id = "nav-bar-wrapper";
+
+  navElem.appendChild(navList);
+
+  for (let i = 0; i < navItems.length; i++) {
+    const navItem = document.createElement("li");
+    const navLink = document.createElement("a");
+
+    navLink.className = "nav-bar-options main-font-color";
+
+    //set properties on anchor
+    navLink.href = navItems[i].href;
+    navLink.textContent = navItems[i].text;
+
+    //add anchor to listitem and listitem to list
+    navItem.appendChild(navLink);
+    navList.appendChild(navItem);
+  }
+
+  greenLeatherCover.appendChild(navElem);
 }
