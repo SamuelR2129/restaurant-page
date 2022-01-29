@@ -80,7 +80,7 @@ ul {
 .nav-bar-options {
   text-decoration: none;
   font-family: "Kiona";
-  letter-spacing: 10px;
+  letter-spacing: 10npm tun px;
 }
 
 /*link hover effect*/
@@ -114,3 +114,5 @@ a:hover::after {
     opacity: 1;
   }
 }
+
+/* MENU PAGE */

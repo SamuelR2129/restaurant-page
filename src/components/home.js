@@ -1,6 +1,6 @@
 import hand from "./images/hand.svg";
 
-export default function printMe() {
+const createHome = () => {
   const pageContent = document.querySelector("#content");
   const greenLeatherCover = document.createElement("div");
   greenLeatherCover.className = "background-cover";
@@ -25,9 +25,9 @@ export default function printMe() {
 
   //nav bar at bottom of main
   const navItems = [
-    { href: "#", text: "MENU" },
-    { href: "#", text: "CONTACT" },
-    { href: "#", text: "ABOUT" },
+    { text: "MENU", id: "menu-link" },
+    { text: "CONTACT", id: "contact-link" },
+    { text: "ABOUT", id: "about-link" },
   ];
 
   const navElem = document.createElement("nav");
@@ -45,8 +45,8 @@ export default function printMe() {
     navLink.className = "nav-bar-options main-font-color";
 
     //set properties on anchor
-    navLink.href = navItems[i].href;
     navLink.textContent = navItems[i].text;
+    navLink.id = navItems[i].id;
 
     //add anchor to listitem and listitem to list
     navItem.appendChild(navLink);
@@ -54,4 +54,6 @@ export default function printMe() {
   }
 
   greenLeatherCover.appendChild(navElem);
-}
+};
+
+export default createHome;
