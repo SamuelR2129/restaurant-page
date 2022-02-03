@@ -3,7 +3,7 @@ import createHome from "./components/home";
 import render from "./components/functions/render";
 import menu from "./components/menu";
 
-createHome();
+menu();
 
 const menuButton = document.querySelector("#menu-link");
 // const contactButton = document.querySelector("#contact-link");
