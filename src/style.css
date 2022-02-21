@@ -138,4 +138,7 @@ a:hover::after {
 .page-heading {
   display: block;
   align-self: center;
+  font-family: "Kiona";
+  font-size: 15em;
+  color: #c3a343;
 }

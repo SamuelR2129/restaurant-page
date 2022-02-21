@@ -12,7 +12,7 @@ const menu = () => {
   container.appendChild(headingWrapper);
 
   const heading = document.createElement("h2");
-  heading.className = "page-heading";
+  heading.className = "page-heading main-font-color";
   heading.textContent = "MENU";
   headingWrapper.appendChild(heading);
 
