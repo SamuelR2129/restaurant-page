@@ -203,5 +203,26 @@ a:hover::after {
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: rgba(187, 167, 107, 0.7);
+  background-color: rgba(202, 181, 116, 0.8);
+  display: none;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 2em;
+  line-height: 1.4em;
+  font-family: sans;
+}
+
+.text-headings {
+  font-family: "Viking";
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: rgb(8, 31, 8);
+}
+
+.text-paragraphs {
+  color: rgb(8, 31, 8);
+  font-family: "Kiona";
+  font-weight: 600;
 }

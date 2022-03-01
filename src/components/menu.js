@@ -53,7 +53,7 @@ const menu = () => {
     textBox.className = "text-box";
 
     const textHeading = document.createElement("h4");
-    textHeading.classsName = "text-headings";
+    textHeading.className = "text-headings";
     textHeading.id = "text-heading-" + i;
 
     const textParagraph = document.createElement("p");
@@ -68,6 +68,34 @@ const menu = () => {
   }
 
   document.getElementById("text-heading-0").textContent = "Vulcano Negroni";
+  document.getElementById("text-paragraph-0").textContent =
+    "Rum Santa Teresa 1796, Coconut, Campari, pandam leaves, beetroot vermouth, almond Nardini. Aperitif, bitter, earthy, aromatic. ";
+
+  document.getElementById("text-heading-1").textContent = "Kriptonita";
+  document.getElementById("text-paragraph-1").textContent =
+    "Tanqueray Ten gin, riboflavin, electric liquor, grapefruit cordial, chocolate bitter and keffir lime essential oil. Electric, acid and sweet. ";
+
+  document.getElementById("text-heading-2").textContent = "Tornado";
+  document.getElementById("text-paragraph-2").textContent =
+    "Grey Goose vodka, vermouth Mancino Ambrato, Italicus rosolio of bergamot, Pisco el Gobernador cordial of cava and goji, apple kombucha, pear and azahar flowers. Refreshing, floral, fruity, delicate ";
+
+  document.getElementById("text-heading-3").textContent = "Great Gatsby";
+  document.getElementById("text-paragraph-3").textContent =
+    "Macallan 12DC whiskey, white trufflehoney, amaro, essence of lavender and smoked with vanilla and chocolate tobacco. Smoked. ";
+
+  document.getElementById("text-heading-4").textContent = "The Cloud";
+  document.getElementById("text-paragraph-4").textContent =
+    "Ketel One vodka, Casamigos mezcal, hibiscus, Montenegro amaro, Mancino secco vermouth, birch syrup, Perrier and coffee cloud. Intense, smoky, refreshing, penetrating. ";
+
+  document.getElementById("text-heading-5").textContent = "Brunch in the Moon";
+  document.getElementById("text-paragraph-5").textContent =
+    "Patrón Silver tequila, Vida del Maguey mezcal, oyster leaves, Port wine, tomato juice, raspberries and ponzu sauce. Spicy, tender, caramelized, sweet. ";
+
+  document
+    .getElementsByClassName("text-box")
+    .addEventListener("mouseover", (event) => {
+      event.target.style.display = "flex";
+    });
 };
 
 export default menu;
