@@ -90,12 +90,6 @@ const menu = () => {
   document.getElementById("text-heading-5").textContent = "Brunch in the Moon";
   document.getElementById("text-paragraph-5").textContent =
     "Patrón Silver tequila, Vida del Maguey mezcal, oyster leaves, Port wine, tomato juice, raspberries and ponzu sauce. Spicy, tender, caramelized, sweet. ";
-
-  document
-    .getElementsByClassName("text-box")
-    .addEventListener("mouseover", (event) => {
-      event.target.style.display = "flex";
-    });
 };
 
 export default menu;

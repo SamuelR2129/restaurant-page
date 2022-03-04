@@ -13,3 +13,13 @@ menuButton.addEventListener("click", () => {
   render();
   menu();
 });
+
+//hover effect for cocktail info on menu page
+const drinkImages = document.querySelector(".cocktail-box");
+
+drinkImages.addEventListener("mouseover", (event) => {
+  const textBox = document.querySelector(".text-box");
+  if (event.target.className == "text-box") {
+    textBox.style.display = "flex";
+  }
+});
